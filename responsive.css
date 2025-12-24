@@ -1,0 +1,105 @@
+@media screen and (max-width:1245px){
+   .mobile-menu{
+       display: flex;
+       display: none;
+    }
+    
+}
+@media screen and (min-width:1245px){
+   .mobile-menu{
+       display: none;
+    }
+}
+@media screen and ( max-width: 1200px){
+     .portflio-about{
+        width: 100%;
+     }
+     .about h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+.about p {
+  font-size: 15px;
+}
+}
+@media screen and ( max-width: 992px){
+     .portflio-about{
+        width: 100%;
+     }
+     .about h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.about p {
+  font-size: 12px;
+}
+.cv {
+  padding: 7px 15px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.portflio-about {
+  background-color: #262626;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+}
+}
+@media screen and ( max-width: 780px){
+     .portflio-about{
+        width: 100%;
+     }
+     .about h3 {
+  font-size: 19px;
+  margin-bottom: 10px;
+}
+.about p {
+  font-size: 11px;
+}
+.cv {
+  padding: 7px 15px;
+  font-size: 12px;
+  margin-top: 15px;
+}
+.portflio-about {
+  background-color: #262626;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+}
+}
+   @media screen and (min-width:984px){
+    .menu {
+        display: none;
+    }
+}
+@media screen and ( max-width: 996px){
+    .nav-ul {
+    display: none;
+   } 
+}
+
+@media (max-width: 992px) {
+  .about h3 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 50px 0;
+  }
+
+  .about {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .about h3 {
+    font-size: 26px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
