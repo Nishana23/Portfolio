@@ -26,12 +26,12 @@
             </div>
             <div class="ser-nav">
                 <ul class="nav-ul">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                     <li><a href="">Projects</a></li>
-                      <li><a href="">Reviews</a></li>
-                    <li><a href="" class="btn-contact">Contact Us</a></li>
+                    <li><a href="#hero-section">Home</a></li>
+                    <li><a href="#portflio-about">About</a></li>
+                    <li><a href="#Service-portfolio">Services</a></li>
+                     <li><a href="#expertise-portfolio">expertise</a></li>
+                      <li><a href="#project-portfolio">Projects</a></li>
+                    <li><a href="#contact-portfolio" class="btn-contact">Contact Us</a></li>
                 </ul>
                 <div class="menu">
                     <span></span>
@@ -50,10 +50,10 @@
                 </ul>
                 </div>
     </header>
-<section class="main-section">
+<section id="hero-section"class="main-section">
   <div class="container">
     <div class="row">
-      <div class="col-md-8 col-12">
+      <div class="col-md-8 col-12" style="margin:auto">
         <div class="heading">
           <h2 class="name">
             Hi I'm <span>Nishana Sherin</span>
@@ -136,7 +136,7 @@
 
         </div>
     </section>
-    <section>
+    <section id="portflio-about">
         <div class="container portflio-about mtop">
             <div class="row">
                      <div class="col-md-4">
@@ -159,7 +159,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio-sec3 mtop">
+    <section class="portfolio-sec3 mtop" id="Service-portfolio">
         <div class="container">
             <div class="row g-4">
                 <div class="service-text">
@@ -224,7 +224,7 @@
             </div>
         </div>
     </section>
-    <section class="portfolio-sec4 mtop">
+    <section class="portfolio-sec4 mtop" id="expertise-portfolio">
         <div class="container expertises">
             <div class="poflio-service">
                  <h3 class="title">My  Expertise</h3>
@@ -253,7 +253,7 @@
             
         </div>
     </section>
-    <section class="portfolio-sec5 mtop">
+    <section class="portfolio-sec5 mtop" id="project-portfolio">
         <div class="container">
             <div class="poflio-service">
                  <h3 class="title">My Projects</h3>
@@ -282,7 +282,7 @@
         
 
     </section>
-    <section class="portfolio-sec6 mtop">
+    <section class="portfolio-sec6 mtop" id="contact-portfolio">
     <div class="container">
         <div class="Contact">
             <div class="row">
@@ -374,21 +374,17 @@
         const options = document.querySelectorAll(".option");
         let currentIndex = 0;
 
-        // Manual click activation
         options.forEach((option, index) => {
             option.addEventListener("click", () => {
                 setActive(index);
             });
         });
 
-        // Function to activate selected slide
         function setActive(index) {
             options.forEach(o => o.classList.remove("active"));
             options[index].classList.add("active");
             currentIndex = index;
         }
-
-        // Auto slide every 3 seconds
         setInterval(() => {
             currentIndex = (currentIndex + 1) % options.length;
             setActive(currentIndex);
