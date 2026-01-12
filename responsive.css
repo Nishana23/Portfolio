@@ -45,6 +45,9 @@
   width: 100%;
 }
 }
+@media screen and ( max-width: 720px){
+  
+}
 @media screen and ( max-width: 780px){
      .portflio-about{
         width: 100%;
@@ -119,5 +122,21 @@
   .expertise div{
     width: 100px;
     height: 100px;
+  }
+}
+@media (max-width: 500px) and (min-width: 300px){
+  .expertise{
+    gap: 14px; /* mobile gap */
+  }
+
+  .expertise div{
+    width: calc(33.333% - 10px);
+    height: 95px;
+    padding: 14px;
+  }
+
+  .expertise div img{
+    width: 40px;
+    height: 40px;
   }
 }
