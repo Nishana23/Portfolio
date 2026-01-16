@@ -61,18 +61,6 @@ header {
 .nav-ul a:hover{
  color: #ffffff;
 }
-/* a.btn-contact{
-  background-color: #3b82f6;
-  color: #ffffff;
-  padding: 10px 15px;
-  border-radius: 30px;
-  font-weight: 600;
-  transition: background-color 0.1s ease;
-}
-a.btn-contact:hover{
-  background-color: green;
-} */
-
 
 a.btn-contact {
   position: relative;
@@ -333,6 +321,7 @@ margin-top: 170px;
    color: #fff;
   text-decoration: none;
 }
+
 .service-text{
   color: white;
   text-align: center;

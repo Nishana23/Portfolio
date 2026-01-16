@@ -126,7 +126,7 @@
 }
 @media (max-width: 500px) and (min-width: 300px){
   .expertise{
-    gap: 14px; /* mobile gap */
+    gap: 14px; 
   }
 
   .expertise div{
@@ -183,5 +183,15 @@
 
   .btn-send{
     width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .cv{
+    display: block;
+    margin: 15px auto 0;
+    width: fit-content;
+    padding: 12px 28px; 
+    font-size: 15px;
   }
 }
