@@ -141,6 +141,38 @@
   }
 }
 @media (max-width: 768px){
+  .main-section{
+    padding: 40px 15px;
+  }
+
+  .main-section .row{
+    text-align: center;
+  }
+  .name{
+    font-size: 22px;
+  }
+
+  .title{
+    font-size: 30px;
+  }
+
+  .caption{
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 12px 0 18px;
+  }
+
+  .btn-hire{
+    display: block;
+    margin: 0 auto;
+  }
+
+  .portimg img{
+    max-width: 220px;
+    display: block;
+    margin: 20px auto 0;
+  }
+
 
   .Contact .row{
     gap: 30px;
