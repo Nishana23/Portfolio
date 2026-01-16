@@ -30,28 +30,31 @@ header {
   background: #171717;
 }
 
-.ser-head {
+.ser-head{
   display: flex;
-  width: 100%;
-  padding: 10px;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
+  width: 100%;
+  padding: 10px 20px;
 }
 
-.ser-nav {
-  display: flex;
-  padding-left: 0;
-  margin-bottom: 0;
-  list-style: none;
-}
-
-.nav-ul {
+.ser-nav{
   display: flex;
   align-items: center;
+  gap: 20px;
+}
+
+.nav-ul{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu{
+  display: none;
+  flex-direction: column;
   justify-content: center;
-  gap: 0rem 1rem;
 }
-
 .nav-ul a {
   padding: 10px 17px;
   transition: 0.3s all;
@@ -404,7 +407,7 @@ font-size: 16px;
   gap: 40px;
 }
 
-.expertise div {
+ .expertise div{
   background: #262626;
   padding: 20px;
   border-radius: 15px;
@@ -413,20 +416,23 @@ font-size: 16px;
   justify-content: center;
   width: 120px;
   height: 120px;
-   transition:
-    transform 0.3s ease,
-    background-color 0.3s ease,
-    border 0.3s ease;
-   border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.05);
+  overflow: visible;
+  transition: 0.3s ease;
 }
 
-.expertise div img {
+.expertise div img{
   width: 60px;
   height: 60px;
+  transition: 0.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.expertise div:hover img{
+  transform: translateY(-20px) scale(1.15) rotate(-3deg);
+  filter: drop-shadow(0 12px 18px rgba(59,130,246,0.6));
 }
 
 .expertise div:hover{
-  transform: translateY(-6px);
   background-color: #2e2e2e;
   border: 1px solid rgba(255,255,255,0.15);
 }
@@ -537,8 +543,8 @@ font-size: 40px;
         .options{
   display: flex;
   gap: 10px;
-  width: 90%;
-  height: 400px;
+  width: 100%;
+  height: 700px;
   margin: auto;
 }
 

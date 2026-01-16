@@ -141,18 +141,20 @@
   }
 }
 @media (max-width: 768px){
-  .main-section{
-    padding: 40px 15px;
+  
+  a.btn-contact{
+    display: none;
   }
 
   .main-section .row{
     text-align: center;
   }
   .name{
-    font-size: 22px;
+    font-size: 25px;
+    margin-top: 15px;
   }
 
-  .title{
+  h1.title{
     font-size: 30px;
   }
 
@@ -165,12 +167,6 @@
   .btn-hire{
     display: block;
     margin: 0 auto;
-  }
-
-  .portimg img{
-    max-width: 220px;
-    display: block;
-    margin: 20px auto 0;
   }
 
 
