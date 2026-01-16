@@ -140,3 +140,48 @@
     height: 40px;
   }
 }
+@media (max-width: 768px){
+
+  .Contact .row{
+    gap: 30px;
+  }
+
+  .contact-list li{
+    align-items: flex-start;
+  }
+
+  .contact-form-box{
+    margin-top: 20px;
+  }
+
+  .footer-end{
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer-icon a{
+    margin: 0 6px;
+  }
+
+  .footer-end p{
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+@media (max-width: 768px){
+
+  .col-md-6{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-form-box{
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+  }
+
+  .btn-send{
+    width: 100%;
+  }
+}

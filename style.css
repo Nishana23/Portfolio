@@ -88,7 +88,6 @@ a.btn-contact {
   transition: transform 0.25s ease;
 }
 
-/* water layers (idle state) */
 a.btn-contact::before,
 a.btn-contact::after {
   content: "";
@@ -226,11 +225,12 @@ margin-top: 60px;
 
 .name span {
   font-weight: 600;
+  color:#97a1ed;
 }
 
 h1.title {
   font-size: 46px;
-  color: #7f86f0;
+  color: #ffffff;
 }
 
 .title span {
@@ -245,7 +245,7 @@ h1.title {
 }
 
 .btn-hire {
-background: #7f86f0;
+background: #97a1ed;
     border-radius: 20px;
     padding: 10px 30px;
     font-size: 20px;
@@ -278,7 +278,9 @@ background: #7f86f0;
     padding: 14px;
      
 }
-
+.sermain-head img{
+ width: 100px;
+}
 .slick-slide {
     display: flex !important;
     justify-content: center;
@@ -514,6 +516,10 @@ font-size: 40px;
   border-radius: 8px;
   color: #fff;
 }
+.contact-form-box{
+  width: 100%;
+  box-sizing: border-box;
+}
 .form-box:focus{
   outline: none;
 }
@@ -538,33 +544,7 @@ font-size: 40px;
   display: flex;
   justify-content: space-between;
 }
-/* .options {
-            display: flex;
-            gap: 10px;
-            width: 90%;
-            height: 400px;
-            margin: 0 auto;
-        }
 
-        .option {
-            flex: 1;
-            background-image: var(--optionImage);
-            background-size: cover;
-            background-position: center;
-            border-radius: 30px;
-            position: relative;
-            cursor: pointer;
-            transition: flex 0.6s ease;
-            overflow: hidden;
-        }
-
-        .option.active {
-            flex: 4;
-        }
-
-        .option:not(.active) {
-            filter: brightness(0.6);
-        } */
         .options{
   display: flex;
   gap: 10px;
@@ -592,12 +572,10 @@ font-size: 40px;
   transition: 0.4s ease;
 }
 
-/* dim inactive */
 .option:not(.active) img{
   filter: brightness(0.5);
 }
 
-/* hover pop */
 .option:hover img{
   filter: brightness(1);
   transform: scale(1.05);
@@ -607,5 +585,9 @@ font-size: 40px;
           display: flex;
           flex-direction: column-reverse;
         }
-
+.footer-icon a{
+ background-color: #454649;
+ padding: 5px;
+ border-radius: 50%;
+}
         
