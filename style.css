@@ -19,7 +19,7 @@ a {
 
 body {
   font-family: "Inter", sans-serif;
-  background-color:#121111;
+  background-color:#000000;
 }
 
 header {
@@ -211,16 +211,17 @@ margin-top: 60px;
 
 .name {
   color: #fff;
-  font-size: 46px;
+  font-size: 53px;
 }
+
 
 .name span {
   font-weight: 600;
-  color:#97a1ed;
+  color:#ffffff;
 }
 
 h1.title {
-  font-size: 46px;
+  font-size: 50px;
   color: #ffffff;
 }
 
@@ -236,7 +237,7 @@ h1.title {
 }
 
 .btn-hire {
-background: #97a1ed;
+background: #AFB8FF;
     border-radius: 20px;
     padding: 10px 30px;
     font-size: 20px;
@@ -244,7 +245,7 @@ background: #97a1ed;
     border: none;
 }
   .btn-hire a{
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .portimg {
 
@@ -266,7 +267,7 @@ background: #97a1ed;
     display: flex !important;
     align-items: center;
     gap: 50px;
-    padding: 14px;
+    padding: 20px;
      
 }
 .sermain-head img{
@@ -337,7 +338,7 @@ margin-top: 170px;
   border: 1px solid rgb(198, 204, 254,45%);
   padding: 22px 20px;
     border-radius: 12px;
-    background: #252424;
+    background: #1e1e1e;
     margin: 10px 0;
     width: 100%;
     color: white;
@@ -407,20 +408,54 @@ font-size: 16px;
   gap: 40px;
 }
 
- .expertise div{
-  background: #262626;
-  padding: 20px;
-  border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 120px;
-  height: 120px;
-  border: 1px solid rgba(255,255,255,0.05);
-  overflow: visible;
-  transition: 0.3s ease;
+ .expertise div {
+    background: #141414; 
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 150px;
+    border: 1px solid rgba(59, 130, 246, 0.1); 
+    overflow: visible;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+.expertise div:hover {
+    background: #000000;
+    border: 1px solid #3b82f6; 
+    box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+    transform: translateY(-12px) scale(1.05);
+}
+.expertise div::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #3b82f6;
+    filter: blur(40px);
+    opacity: 0;
+    transition: 0.4s;
+    z-index: -1;
 }
 
+.expertise div:hover::after {
+    opacity: 0.3;
+}
+
+.expertise div img {
+    width: 60px;
+    height: 60px;
+    filter: drop-shadow(0 0 5px rgba(59, 130, 246, 0.2));
+    transition: 0.4s ease;
+}
+
+.expertise div:hover img {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.8));
+}
 .expertise div img{
   width: 60px;
   height: 60px;
@@ -486,7 +521,7 @@ font-size: 40px;
   text-decoration: none;
 }
 .contact-form-box {
-  background: #111;
+  background: #000000;
   padding: 30px;
   border-radius: 15px;
   border: 1px solid #333;
@@ -544,37 +579,10 @@ font-size: 40px;
   display: flex;
   gap: 10px;
   width: 100%;
-  height: 700px;
+  height: 500px;
   margin: auto;
 }
 
-.option{
-  flex: 1;
-  border-radius: 30px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: flex 0.6s ease;
-}
-
-.option.active{
-  flex: 4;
-}
-
-.option img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.4s ease;
-}
-
-.option:not(.active) img{
-  filter: brightness(0.5);
-}
-
-.option:hover img{
-  filter: brightness(1);
-  transform: scale(1.05);
-}
 
         .main-section.row{
           display: flex;
@@ -585,4 +593,66 @@ font-size: 40px;
  padding: 5px;
  border-radius: 50%;
 }
-        
+.image-slide {
+    width: 100%;
+    max-width: 850px;
+    height: 500px;
+    margin: 40px auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    outline: 5px solid #9897a4; 
+    outline-offset: 8px;
+    transition: transform 0.4s ease; 
+}
+
+.image-slide:hover {
+    transform: scale(1.03);
+}
+
+.wrapper {
+    display: flex;
+    width: 400%;
+    height: 100%;
+    animation: slide 16s infinite ease-in-out;
+}
+
+.image-slide:hover .wrapper {
+    animation-play-state: paused;
+}
+
+.slide-item {
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
+.slide-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes slide {
+    0%, 25%   { transform: translateX(0); }
+    30%, 50%  { transform: translateX(-25%); }
+    55%, 75%  { transform: translateX(-50%); }
+    80%, 100% { transform: translateX(-75%); }
+}
+
